@@ -1,6 +1,6 @@
-// Today task
+// - Today task
 // - write 10 problem that use them
-// - creat a class for this methods and use it in main
+// - create a class for this methods and use it in main
 // - 🚨 Ai answer will get you zero
 //for
 //while
@@ -12,7 +12,6 @@ class LoopTasks {
       print(i);
     }
   }
-
   //problem no.2 => print sum of numbers from 1 to n
   void sumToN(int n) {
     int sum = 0;
@@ -21,7 +20,6 @@ class LoopTasks {
     }
     print(sum);
   }
-
   //problem no.3 => print multiplication table for n
   void multiplicationTable(int n) {
     for (int i = 1; i <= 10; i++) {
@@ -37,7 +35,6 @@ class LoopTasks {
       }
     }
   }
-
   //problem no.5 => print sum of even numbers from 1 to n
   void printEvenNumbers(int n) {
     for (int i = 1; i <= n; i++) {
@@ -46,7 +43,6 @@ class LoopTasks {
       }
     }
   }
-
   //problem no.6 => count even numbers in a list
   int countEvenNumbers(List<int> numbers) {
     int count = 0;
@@ -83,7 +79,6 @@ class LoopTasks {
     }
     return result;
   }
-
 //problem no.10 => print stars pattern
   void printStars(int n) {
     for (int i = 1; i <= n; i++) {
