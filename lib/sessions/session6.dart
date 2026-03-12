@@ -5,6 +5,10 @@ class Session6 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //اداني صلاحيات اني اcheck على ال عرض او طول الابلكيشن
+    //screen utils
+    final screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       body: Container(
         width: double.infinity,
