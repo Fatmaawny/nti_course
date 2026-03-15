@@ -106,9 +106,17 @@ class Loginscreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "إنشاء حساب",
-                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Registerscreen()),
+                          );
+                        },
+                        child: Text(
+                          "إنشاء حساب",
+                          style: TextStyle(color: Colors.white, fontSize: 14),
+                        ),
                       ),
                       SizedBox(width: 4,),
                       Text(
