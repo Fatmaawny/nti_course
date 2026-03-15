@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../authScreen.dart';
+
 class Session8 extends StatelessWidget {
   const Session8({super.key});
 
@@ -7,44 +9,79 @@ class Session8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Stack(
-          children: [
-            Positioned(
+      body: Stack(
+        children: [
+          Container(
+            alignment: AlignmentGeometry.topCenter,
+            child: Positioned(
               child: Container(
-                height: 200,
-                child: Image.asset("assets/images/ph2.jpeg"),
+                height: 112,
+                child: Image.asset("assets/images/top.png"),
               ),
-              right: 4,
               top: 120,
             ),
-            Positioned(
+          ),
+          Container(
+            alignment: AlignmentGeometry.centerLeft,
+            child: Positioned(
               child: Container(
-                height: 120,
-                child: Image.asset("assets/images/ph1.jpeg"),
+                height: 370,
+                child: Image.asset("assets/images/left.png"),
+              ),
+              left: 0,
+            ),
+          ),
+          Container(
+            alignment: AlignmentGeometry.centerRight,
+            child: Positioned(
+              child: Container(
+                height: 330,
+                child: Image.asset("assets/images/right.png"),
+              ),
+              right: 0,
+            ),
+          ),
+          Container(
+            alignment: AlignmentGeometry.topCenter,
+            padding: EdgeInsets.only(top: 100),
+            child: Positioned(
+              child: Container(
+                height: 150,
+                child: Image.asset("assets/images/logo.png"),
               ),
               top: 0,
             ),
-
-            Positioned(
+          ),Container(
+            alignment: AlignmentGeometry.bottomCenter,
+            child: Positioned(
               child: Container(
                 height: 400,
-                child: Image.asset("assets/images/ph3.jpeg"),
+                child: Image.asset("assets/images/child.png"),
               ),
-              top: 100,
-              left: 0,
+              top: 0,
             ),
-
-            Positioned(
+          ),
+          Positioned(
+            bottom: 50,
+            left: 50,
+            child: GestureDetector(
+              onTap: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>Authscreen()));
+              },
               child: Container(
-                height: 164,
-                child: Image.asset("assets/images/nbnb.jpeg"),
+                alignment: AlignmentGeometry.bottomCenter,
+                height: 56,
+                width: 327,
+                decoration: BoxDecoration(
+                  color: Color(0xFFE33C64),
+                  borderRadius: BorderRadius.circular(12)
+                ),
+                child: Center(child: Text("دعنا نبدأ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 25),)),
               ),
-              top: 50,
-              left: 50,
             ),
-          ],
-        ),
+          )
+
+        ],
       ),
     );
   }
