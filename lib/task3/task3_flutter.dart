@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class Task3flutter extends StatelessWidget {
-  const Task3flutter({super.key});
+class Task3Flutter extends StatelessWidget {
+  const Task3Flutter({super.key});
 
   @override
   Widget build(BuildContext context) {
