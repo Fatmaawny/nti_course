@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nti_course/registerScreen.dart';
 
 import 'loginScreen.dart';
-
-class Authscreen extends StatelessWidget {
-  const Authscreen({super.key});
+class Registerscreen extends StatelessWidget {
+  const Registerscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +11,7 @@ class Authscreen extends StatelessWidget {
         children: [
           Positioned(
             top: 40,
-            left: 40,
+            left: 90,
             child: SizedBox(
               height: 120,
               child: Image.asset("assets/images/logo.png"),

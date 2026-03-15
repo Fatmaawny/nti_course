@@ -51,7 +51,8 @@ class Session8 extends StatelessWidget {
               ),
               top: 0,
             ),
-          ),Container(
+          ),
+          Container(
             alignment: AlignmentGeometry.bottomCenter,
             child: Positioned(
               child: Container(
@@ -65,8 +66,11 @@ class Session8 extends StatelessWidget {
             bottom: 50,
             left: 50,
             child: GestureDetector(
-              onTap: (){
-                Navigator.push(context,MaterialPageRoute(builder: (context)=>Authscreen()));
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Authscreen()),
+                );
               },
               child: Container(
                 alignment: AlignmentGeometry.bottomCenter,
@@ -74,13 +78,21 @@ class Session8 extends StatelessWidget {
                 width: 327,
                 decoration: BoxDecoration(
                   color: Color(0xFFE33C64),
-                  borderRadius: BorderRadius.circular(12)
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                child: Center(child: Text("دعنا نبدأ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 25),)),
+                child: Center(
+                  child: Text(
+                    "دعنا نبدأ",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                    ),
+                  ),
+                ),
               ),
             ),
-          )
-
+          ),
         ],
       ),
     );
