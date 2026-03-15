@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nti_course/sessions/session8.dart';
+import 'package:nti_course/task3/task3_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Session8(),
+      home: const Task3Flutter(),
+      theme: ThemeData(
+        fontFamily: "Almarai"
+      ),
     );
   }
 }
