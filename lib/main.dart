@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nti_course/sessions/session6.dart';
-import 'package:nti_course/sessions/session7.dart';
-import 'package:nti_course/welcomePage.dart';
+import 'package:nti_course/sessions/session8.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Session7(),
+      home: const Session8(),
     );
   }
 }
