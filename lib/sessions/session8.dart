@@ -15,7 +15,7 @@ class Session8 extends StatelessWidget {
                 height: 200,
                 child: Image.asset("assets/images/ph2.jpeg"),
               ),
-              right: 0,
+              right: 4,
               top: 120,
             ),
             Positioned(
